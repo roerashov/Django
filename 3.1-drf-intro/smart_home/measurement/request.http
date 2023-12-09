@@ -1,0 +1,14 @@
+
+@baseUrl = http://localhost:8000/api
+
+GET http://localhost:8000/api/view
+
+###
+
+GET http://localhost:8000/api/sensor/1/
+Content-Type: application/json
+
+###
+
+GET {{baseUrl}}/sensor/2/
+Content-Type: application/json
