@@ -10,5 +10,5 @@ Content-Type: application/json
 
 ###
 
-GET {{baseUrl}}/sensor/2/
+GET {{baseUrl}}/sensor/3/
 Content-Type: application/json

@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import View, SensorView
+from .views import SensorView, MeasurementView, OneSensorView
 
 urlpatterns = [
-    path('view/', View.as_view()),
-    path('sensor/<pk>/',SensorView.as_view())
+    path('sensors/', SensorView.as_view()),
+    #path('measurements/', MeasurementView.as_view()),
+    path('sensors/<pk>/', OneSensorView.as_view()),
 ]

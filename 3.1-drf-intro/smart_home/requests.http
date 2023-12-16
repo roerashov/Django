@@ -3,7 +3,7 @@
 @baseUrl = http://localhost:8000/api
 
 # получение датчиков
-GET {{baseUrl}}/view/
+GET {{baseUrl}}/sensors/
 Content-Type: application/json
 
 ###
@@ -20,7 +20,7 @@ Content-Type: application/json
 ###
 
 # обновление датчика
-PATCH {{baseUrl}}/sensors/1/
+PATCH {{baseUrl}}/sensor/1/
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ POST {{baseUrl}}/measurements/
 Content-Type: application/json
 
 {
-  "sensor": 1,
+  "sensor_id": 1,
   "temperature": 22.3
 }
 
